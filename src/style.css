@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    grid-template-rows: 200px 400px 300px;
+
+}
+
+#top{
+    display: grid;
+
+    align-self:flex-start;
+    justify-self: center;
+
+    grid-row-start: 1;
+}
+
+#searchLabel{
+    text-align: center;
+}
+
+#search{
+    border-radius: 70px;
+}
+

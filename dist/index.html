@@ -3,16 +3,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
+<header>
+    <title>Weather App</title>
+</header>
 <body>
     <div id="top">
-        <label id = "searchLabel" for="search">Enter a town or city</label>
+        <label id = "searchLabel" for="search">Enter a town or city and country (city,country)</label>
         <input id="search" type="text" max="20">
     </div>
     <div id="display">
-
+        <img id="weatherImage" src="" alt="">
+        <h1 id="city"></h1>
+        <p id="Weather"></p>
+        <p id="temperature"></p>
+        <p id="high"></p>
+        <p id="low"></p>
     </div>
+    <div id="bottomDisplay"></div>
 </body>
 </html>
