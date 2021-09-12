@@ -21,3 +21,17 @@ body{
     border-radius: 70px;
 }
 
+#display{
+    display: grid;
+    grid-template-columns: 512px auto;
+    grid-row-start: 2;
+}
+
+.pos{
+    display: grid;
+
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    margin: 30px;
+}
