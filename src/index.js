@@ -82,11 +82,16 @@ const displayData = async (data) => {
 
 const events = (() => {
 
-    search.addEventListener('keyup', async (e) => {
+    search.addEventListener('keyup', (e) => {
         if (e.key === 'Enter' || e.keyCode === 13) {
             const search = document.querySelector('#search');
             let city = search.value;
-            let data = await getInputData(city);
+            getInputData(city);
         }
     });
+})();
+
+const startUp = (() => {
+    const search = document.querySelector('#search');
+    getInputData("Johannesburg");
 })();
